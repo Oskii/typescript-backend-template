@@ -42,6 +42,12 @@ echo "Creating a new PostgreSQL database..."
 read -p "Enter the name for the new database: " dbname
 sudo -u postgres createdb "$dbname"
 
+# Set the password for the postgres user
+read -sp "Enter the new password for the postgres user: " password
+echo
+sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD '$password';"
+sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE \"$dbname\" TO postgres;"
+
 # Access the PostgreSQL prompt (optional)
 echo "Accessing PostgreSQL prompt..."
 sudo -u postgres psql

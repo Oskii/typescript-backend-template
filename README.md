@@ -55,6 +55,13 @@ cd typescript-backend
 npm install
 ```
 
+### Install Database
+
+```bash
+chmod +x setup_postgresql.sh
+./setup_postgresql.sh
+```
+
 ## Usage
 
 ### Development

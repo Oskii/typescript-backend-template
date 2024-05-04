@@ -1,29 +1,41 @@
 # TypeScript Backend Project
 ## Description
-This is a scalable TypeScript backend project template for the ai lesson generator backend. This project should be used to serve the content to paying users of the lesson content. It includes a structured folder layout, basic setup for a web server using Express, and is configured to use TypeScript and Prettier.
+Finally a complete, scalable and maintainable typescript backend template (that's actually good). 
+
+- Uses Typescript
+- Includes full Postgres database setup
+- Prettier for code formatting
+- Vitest for testing
+- Good and scalable folder structure
+- Environment variables
+- Serves static HTML, CSS, JS
+- Uses fast bootstrap for ui
 
 ## Project Structure
 
 ```bash
 typescript-backend/
-├── src/
-│   ├── controllers/
-│   │   └── index.ts
-│   ├── routes/
-│   │   └── index.ts
-│   ├── services/
-│   │   └── index.ts
-│   ├── utils/
-│   │   └── index.ts
+
+├── public
+│   ├── css
+│   ├── html
+│   └── js
+├── src
+│   ├── app.ts
+│   ├── controllers
+│   ├── db
 │   ├── index.ts
-│   └── app.ts
-├── dist/
-├── node_modules/
-├── .gitignore
+│   ├── routes
+│   ├── services
+│   └── utils
+├── test
+│   └── index.test.ts
+├── package-lock.json
 ├── package.json
+├── README.md
+├── setup_postgresql.sh
 ├── tsconfig.json
-├── .prettierrc
-└── .prettierignore
+└── vitest.config.ts
 ```
 
 ## Getting Started

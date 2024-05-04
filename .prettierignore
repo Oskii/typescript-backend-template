@@ -1,0 +1,8 @@
+# Ignore artifacts:
+dist/
+node_modules/
+
+# Ignore all output from the build
+*.js
+*.js.map
+

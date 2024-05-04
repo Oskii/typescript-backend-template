@@ -1,0 +1,17 @@
+{
+  "name": "typescript-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.0"
+  }
+}
